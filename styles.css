@@ -1,8 +1,10 @@
 .cmd{
-  color: black;
-  background: chartreuse;
+  color: chartreuse;
+  background: black;
   padding: 5px;
   margin: 10px;
+  color: black;
+  background: chartreuse;
 }
 
 .cmd:before{
