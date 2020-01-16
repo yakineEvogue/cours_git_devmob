@@ -82,6 +82,44 @@
     <div class="warning">Le fetch va littéralement remplacer master par la Branche. Il s'agit donc d'une grosse modification dans le projet (ex: version 2)</div>
 
     <h2>Repertoire distant et GitHub</h2>
+    <p>On créé un nouveau repository sur GitHub, qui va faire office de serveur pour stocker le depot distant (qui lui sera à-même de "distribuer les fichiers aux collaborateurs du projet")</p>
+
+    Pour connecter votre projet à votre depot distant :
+    <div class="warning">Cette ligne est récupérable directement après la création du repository</div>
+    <div class="cmd">git remote add origin https://github.com/identifiant/nom_depot_distant.git</div>
+
+    Pour envoyer les fichiers au depot distant :
+    <div class="cmd">git push origin Master</div>
+    <div class="warning">A cette étape il faut être connecté à github. Votre password vous sera demandé</div>
+
+    <h2>Pour travailler de manière collaborative :</h2>
+    <p>Dans votre compte GITHUB vous devez ajouté des collaborateurs</p>
+
+    Pour Récupérer les modifications des collègues :
+    <div class="cmd">git pull origin Master</div>
+
+    Pousser ses modifs :
+    <div class="warning">Apres avoir ADD et COMMIT bien entendu</div>
+    <div class="cmd">git push origin Master</div>
+    <div class="warning">AVANT DE PUSH, on fait toujours un PULL. De telle sorte que : Si vous êtes le developpeur A, vous envoyez au Developpeur B, vos modifications, ainsi que celles que vous auriez récupérées du développeur C</div>
+
+    <h2>Recap : </h2>
+    <p>Récap des différentes etapes : </p>
+    <ol>
+          <li>J'arrive le matin... Je prend un café et je <strong>PULL</strong>, pour avoir une version à jour du projet</li>
+          <li>je travaille durement toute la journée sur le projet...NO PAIN, NO GAIN :)</li>
+            <li>La journée se termine, avant de partir, je :
+              <ol>
+                  <li><strong>ADD</strong> mes fichiers créés ou modifiés</li>
+                  <li><strong>COMMIT</strong> mes modifications</li>
+                  <li><strong>PULL</strong> Les modifications des collègues</li>
+                  <li><strong>PUSH</strong> mes modifications, ainsi que celles des collègues, pour le prochain</li>
+                </ol>
+              </li>
+    </ol>
+    <div class="warning">Notez toutefois que ces étapes peuvent être réalisées plusieurs fois par jour, ou tous les 2/3 jours selon votre rythme de travail, la taille de l'équipe... et plein d'autres critères qui sont propres à l'organisation de travail, et au volume du travail en cours.</div>
+
+
 
 
   </body>
