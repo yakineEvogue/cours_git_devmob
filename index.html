@@ -58,12 +58,28 @@
     <div class="cmd">git reset HEAD^^</div>
 
     <h2>La notion de branche</h2>
+    <p>Une branche est une copie du projet. Elle permet de développer en parralèlle de nouvelles fonctionnalités. Lorsqu'on considère les nouveautés opérationnelles, on peut les rappatrier sur la version principale (master)</p>
 
+    Voir les branches :
+    <div class="cmd">git branch</div>
 
+    Créer une nouvelle branche :
+    <div class="cmd">git branch 'nom'</div>
 
+    Se placer sur une branche :
+    <div class="cmd">git checkout 'nom'</div>
 
+    Voir les différences entre deux branches :
+    <div class="cmd">git diff 'nom'..master</div>
 
+    Apporter les modifs effectuées sur une branche dans master (il faut être sur master)
+    <div class="cmd">git checkout master</div>
+    <div class="cmd">git merge 'nom'</div>
 
+    Remplacer master par une branche
+    <div class="cmd">git checkout master</div>
+    <div class="cmd">git fetch . 'nom'</div>
+    <div class="warning">Le fetch va littéralement remplacer master par la Branche. Il s'agit donc d'une grosse modification dans le projet (ex: version 2)</div>
 
 
   </body>
